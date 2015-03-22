@@ -1,0 +1,3 @@
+WithLoading = {
+  defaultTemplate: 'embedLoading'
+}

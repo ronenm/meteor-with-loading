@@ -1,0 +1,24 @@
+<template name="withLoading">
+    {{#with this}}
+        {{> Template.contentBlock}}
+    {{else}}
+        {{> Template.dynamic template=getWithLoadingTemplate }}
+    {{/with}}
+</template>
+
+<template name="loadingUntil">
+    {{#if this}}
+        {{> Template.contentBlock}}
+    {{else}}
+        {{> Template.dynamic template=getWithLoadingTemplate }}
+    {{/with}}
+</template>
+
+<template name="loadingWhile">
+    {{#unless this}}
+        {{> Template.contentBlock}}
+    {{else}}
+        {{> Template.dynamic template=getWithLoadingTemplate }}
+    {{/with}}
+</template>
+
