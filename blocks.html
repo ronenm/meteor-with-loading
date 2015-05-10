@@ -1,9 +1,9 @@
-<template name="withLoading">
-    {{#with this}}
-        {{> Template.contentBlock}}
-    {{else}}
+<template name="loadingWhile">
+    {{#if this}}
         {{> Template.dynamic template=getWithLoadingTemplate }}
-    {{/with}}
+    {{else}}
+        {{> Template.contentBlock}}
+    {{/if}}
 </template>
 
 <template name="loadingUntil">
@@ -11,14 +11,13 @@
         {{> Template.contentBlock}}
     {{else}}
         {{> Template.dynamic template=getWithLoadingTemplate }}
-    {{/with}}
+    {{/if}}
 </template>
 
-<template name="loadingWhile">
-    {{#unless this}}
-        {{> Template.contentBlock}}
-    {{else}}
-        {{> Template.dynamic template=getWithLoadingTemplate }}
-    {{/with}}
+<template name="withLoading">
+    {{#loadingUntil this}}
+        {{> Template.contentBlock this}}
+    {{/loadingUntil}}
 </template>
+
 

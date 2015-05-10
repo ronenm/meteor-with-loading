@@ -1,3 +1,3 @@
 WithLoading = {
-  defaultTemplate: 'embedLoading'
+  defaultTemplate: 'SectionLoading'
 }
