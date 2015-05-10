@@ -1,8 +1,8 @@
 Package.describe({
   name: 'ronenm:with-loading',
-  version: '0.0.1',
+  version: '1.0.0',
   // Brief, one-line summary of the package.
-  summary: 'Simple templates for show loading templates on sections of the page',
+  summary: 'Simple templates that shows loading templates on sections of the page',
   // URL to the Git repository containing the source code for this package.
   git: '',
   // By default, Meteor will default to using README.md for documentation.
